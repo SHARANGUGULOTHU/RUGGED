@@ -10,7 +10,7 @@ const error = document.querySelectorAll(".error");
 const eyeIcon = document.querySelectorAll(".fa-regular");
 const mobileno = document.querySelector("#mobileno");
 
-
+//regex patterns 
 let userregx = /^[a-z]/i;
 let emailregx = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/i;
 let passregx = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\da-zA-Z]).{8,}$/
@@ -23,7 +23,7 @@ function startWithalphabet(Name) {
         return true
     }
 }
-
+//utility functions
 function userLength(Name) {
     if (!(Name.value.length >= 3 && Name.value.length <= 20)) {
         return false;
